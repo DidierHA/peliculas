@@ -16,18 +16,14 @@
 <body>
     <!-- Div principal -->
     <div class="contenedor">
-        <h1>Películas</h1>
-        <!-- Inicio formulario para tomar datos -->
-        <form>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Buscar una pelicula..." id="pelicula">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="submit" id="buscar">
-                      <i class="fas fa-search"></i>
-                  </button>
-                </div>
-            </div>
-        </form>
+        <nav class="navbar navbar-light" style="background-color: #2a9d8f;">
+            <a class="navbar-brand">Peliculas</a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Buscar una película..." id="pelicula">
+              <button class="btn btn-primary my-2 my-sm-0" type="submit" id="buscar"><i class="fa fa-search"></i></button>
+            </form>
+          </nav>
+        <div class="contenedorPeliculas" id="contenedorPeliculas"></div>
     </div>
 
     <!-- Agregando el archivo de JS -->
